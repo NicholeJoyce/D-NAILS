@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>D'NAILS (home)</title>
+  <title>RWS Trucking (home)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/roundlogo.png" rel="icon">
+  <link href="assets/img/logo.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -43,16 +43,16 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="index.php" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-gem"></i>
-        <h1>D'NAILS</h1>
+        <i class="bi bi-truck"></i>
+        <h1>RWS Trucking</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.php" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -72,7 +72,7 @@
             </ul>
           </li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -89,17 +89,17 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="800">
+  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="500">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 d-lg-flex flex-lg-column align-items-stretch order-2 order-lg-1 hero-img" data-aos="fade-up">
-          <img src="assets/img/roundlogo.png" class="img-fluid" alt="">
+        <div class="col-lg-4 d-lg-flex flex-lg-column align-items-stretch order-2 order-lg-1 hero-img" data-aos="fade-up">
+          <img src="assets/img/logo.jpg" class="img-fluid" alt="">
         </div>
-        <div class="col-lg-9 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-1 order-lg-2" data-aos="fade-up">
+        <div class="col-lg-8 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-1 order-lg-2" data-aos="fade-up">
           <div>
-            <h1>PAMPER YOUR HANDS, ELEVATE YOUR MOOD!
+            <h1>DELIVERING EXCELLENCE ON THE ROAD
             </h1>
-            <p style="color: #8C143F;">Established in 2021 during the pandemic, D’NAILS is a thriving nail salon founded by a student with a passion for nail art. With her mother's financial support, she turned her passion into a successful business. Despite pandemic challenges, D’NAILS has built a loyal clientele by providing exceptional nail care services and innovative nail art designs. They take time to understand their clients' unique needs and preferences, with a mission to help them feel confident and beautiful. Join us for a transformative experience.
+            <p style="color: #ffff;">RWS Trucking Services is a reliable and trusted full-service trucking company in the Philippines. Established in 2010, we provide efficient and cost-effective transportation solutions for businesses in various industries. Our services include FTL and LTL shipping, refrigerated and hazardous materials transport, and oversized cargo transport. We are committed to safety, reliability, and professionalism, ensuring that your cargo is delivered on time and in excellent condition.
             </p>
           </div>
         </div>
@@ -124,36 +124,36 @@
         <div class="row gy-4 justify-content-center">
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="assets/img/gallery/firstnails.jpg" class="img-fluid" alt="">
+              <img src="assets/img/pic1.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/firstnails.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/pic1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="assets/img/gallery/secondnails.jpg" class="img-fluid" alt="">
+              <img src="assets/img/pic2.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/firstnails.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/pic2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="assets/img/gallery/thirdnails.jpg" class="img-fluid" alt="">
+              <img src="assets/img/pic3.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/thirdnails.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/pic3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="assets/img/gallery/forrthnails.jpg" class="img-fluid" alt="">
+              <img src="assets/img/pic 4.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/forrthnails.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/pic 4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>

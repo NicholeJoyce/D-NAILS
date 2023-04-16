@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>D'NAILS (contact)</title>
+  <title>RWS Trucking (contact)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/roundlogo.png" rel="icon">
+  <link href="assets/img/logo.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -43,16 +43,16 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="index.php" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
-        <h1>D'NAILS</h1>
+        <i class="bi bi-truck"></i>
+        <h1>RWS Trucking</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -72,7 +72,7 @@
             </ul>
           </li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.php" class="active">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -88,7 +88,7 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
+  <main id="main" data-aos="fade" data-aos-delay="100">
 
     <!-- ======= End Page Header ======= -->
     <div class="page-header d-flex align-items-center">
@@ -144,10 +144,10 @@
         <div class="row justify-content-center mt-4">
 
           <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="send.php" method="post">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Nkjnjkname" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
@@ -159,11 +159,11 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
+              <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              </div> -->
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
