@@ -24,7 +24,7 @@ if(isset($_POST['send'])){
     $mail->isHTML(true);
     $email = $_POST['email'];
     $mail->addAddress($email);
-    $mail->isHTML(true);
+    $mail->isHTML(true);                                                                                                     
     $mail->Subject = $_POST['subject'];
     $mail->Body =($message);
     $mail->send();
