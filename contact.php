@@ -114,7 +114,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p> 1486 Aldama St., Sta Barbara, Baliuag, Bulacan 3006</p>
               </div>
             </div>
           </div><!-- End Info Item -->
