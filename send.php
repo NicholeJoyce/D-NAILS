@@ -17,7 +17,7 @@ if(isset($_POST["send"])){
     $mail->Username = 'contact@dnails.shop';
     $mail->Password = 'Nichole@15';
     $mail->SMTPSecure = 'tls';
-    $mail->Port = '465';
+    $mail->Port = '2525';
 
     $mail->setFrom('contact@dnails.shop', 'RWS Trucking Services');
     
