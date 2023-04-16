@@ -9,6 +9,7 @@ require 'PHPMailer/src/SMTP.php';
 if(isset($_POST["send"])){
     $name = $_POST['name'];
     $message = "Hi, ". $name . "! This is to acknowledge your email that we have receieved it, we'll get back to you as soon as we can. Regards, RWS Trucking Services!";
+    
     $mail = new PHPMailer(true);
     $mail->isSMTP();
     $mail->Host = "smtp.hostinger.com";
@@ -16,7 +17,7 @@ if(isset($_POST["send"])){
     $mail->Username = "contact@dnails.shop";
     $mail->Password = "Nichole@15";
     $mail->SMTPSecure = "tls";
-    $mail->Port = 587;
+    $mail->Port = '587';
 
     $mail->setFrom('contact@dnails.shop', 'RWS Trucking Services');
     
