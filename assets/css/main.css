@@ -90,8 +90,8 @@ h6 {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: var(--font-secondary);
-  color: #8C143F;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -106,8 +106,8 @@ h6 {
 .page-header h2 {
   font-size: 56px;
   font-weight: 500;
-  color: #8C143F;
-  font-family: var(--font-secondary);
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -117,11 +117,11 @@ h6 {
 }
 
 .page-header p {
-  color: #8C143F;
+  color: #ffffff;
 }
 
 .page-header .cta-btn {
-  font-family: var(--font-primary);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   display: inline-block;
@@ -130,7 +130,7 @@ h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s;
-  color: #8C143F;
+  color: #ffffff;
   background: var(--color-primary);
 }
 
@@ -157,7 +157,7 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: #8C143F;
+  color: #ffffff;
   line-height: 0;
 }
 
@@ -213,7 +213,7 @@ h6 {
 #preloader .line:before {
   content: "";
   position: absolute;
-  background-color: #8C143F;
+  background-color: #ffffff;
   left: 0;
   top: 50%;
   width: 1px;
@@ -302,8 +302,8 @@ h6 {
   font-size: 32px;
   margin: 0;
   font-weight: 400;
-  color: #000;
-  font-family: var(--font-secondary);
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header .logo i {
@@ -337,7 +337,7 @@ h6 {
 }
 
 .header .header-social-links a:hover {
-  color: #8C143F;
+  color: #ffffff;
 }
 
 @media (max-width: 575px) {
@@ -372,7 +372,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: var(--font-primary);
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 13px;
@@ -429,7 +429,7 @@ h6 {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: #8C143F
+    color: #ffffff
     ;
   }
 
@@ -503,7 +503,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    font-family: var(--font-primary);
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
@@ -524,7 +524,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #8C143F;
+    color: #ffffff;
   }
 
   .navbar .dropdown ul,
@@ -543,7 +543,7 @@ h6 {
   }
 
   .mobile-nav-show {
-    color: #8C143F;
+    color: #ffffff;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -553,7 +553,7 @@ h6 {
   }
 
   .mobile-nav-hide {
-    color: #8C143F;
+    color: #ffffff;
     font-size: 32px;
     cursor: pointer;
     line-height: 0;
@@ -743,7 +743,7 @@ h6 {
 
 .gallery .gallery-links .preview-link:hover,
 .gallery .gallery-links .details-link:hover {
-  color: #8C143F;
+  color: #ffffff;
 }
 
 .gallery .gallery-links .details-link {
@@ -769,7 +769,7 @@ h6 {
 }
 
 .glightbox-clean .gslide-title {
-  color: #8C143F;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -799,7 +799,7 @@ h6 {
 
 .gallery-single .swiper-button-prev:after,
 .gallery-single .swiper-button-next:after {
-  color: #8C143F;
+  color: #ffffff;
   background-color: #FCD4D6;
   font-size: 24px;
   border-radius: 50%;
@@ -830,7 +830,7 @@ h6 {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  font-family: var(--font-secondary);
+  font-family:'Montserrat', sans-serif;
 }
 
 .gallery-single .portfolio-info h3:after {
@@ -866,7 +866,7 @@ h6 {
 .gallery-single .portfolio-info .btn-visit {
   padding: 8px 40px;
   background: var(--color-primary);
-  color: #8C143F;
+  color: #ffffff;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -880,7 +880,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 20px;
   color: #ffffff;
-  font-family: var(--font-secondary);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .gallery-single .portfolio-description p {
@@ -1188,8 +1188,8 @@ h6 {
   margin: 0 0 10px 0;
   font-size: 38px;
   font-weight: 700;
-  color: #000;
-  font-family: #ffffff;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;;
 }
 
 .hero h2 span {
@@ -1217,7 +1217,7 @@ h6 {
 }
 
 .hero .btn-get-started {
-  font-family: var(--font-primary);
+  font-family:  'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   display: inline-block;
