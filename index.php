@@ -49,14 +49,14 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <i class="bi bi-truck"></i>
-        <h1>RWS Trucking</h1>
+        <h1><b>RWS Trucking</b></h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.php" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="index.php" class="active"><b>Home</b></a></li>
+          <li><a href="about.html"><b>About</b></a></li>
+          <li class="dropdown"><a href="#"><span><b>Gallery</b></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="gallery.html">Nature</a></li>
               <li><a href="gallery.html">People</a></li>
@@ -73,8 +73,8 @@
               </li>
             </ul>
           </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="services.html"><b>Services</b></a></li>
+          <li><a href="contact.php"><b>Contact</b></a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -101,7 +101,7 @@
           <div>
             <h1>DELIVERING EXCELLENCE ON THE ROAD
             </h1>
-            <p style="color: #ffff;">RWS Trucking Services is a reliable and trusted full-service trucking company in the Philippines. Established in 2010, we provide efficient and cost-effective transportation solutions for businesses in various industries. Our services include FTL and LTL shipping, refrigerated and hazardous materials transport, and oversized cargo transport. We are committed to safety, reliability, and professionalism, ensuring that your cargo is delivered on time and in excellent condition.
+            <p style="color: #ffff;">RWS Trucking Services is a reliable and trusted full-service trucking company in the Philippines. Established in 2010, we provide efficient and cost-effective transportation solutions for businesses in various industries. We are committed to safety, reliability, and professionalism, ensuring that your cargo is delivered on time and in excellent condition.
             </p>
           </div>
         </div>

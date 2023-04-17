@@ -16,7 +16,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,14 +47,14 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <i class="bi bi-truck"></i>
-        <h1>RWS Trucking</h1>
+        <h1><b>RWS Trucking</b></h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="index.php"><b>Home</b></a></li>
+          <li><a href="about.html"><b>About</b></a></li>
+          <li class="dropdown"><a href="#"><span><b>Gallery</b></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="gallery.html">Nature</a></li>
               <li><a href="gallery.html">People</a></li>
@@ -71,8 +71,8 @@
               </li>
             </ul>
           </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.php" class="active">Contact</a></li>
+          <li><a href="services.html"><b>Services</b></a></li>
+          <li><a href="contact.php" class="active"><b>Contact</b></a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -164,7 +164,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center"><button type="submit" name="send">Send Message</button></div>
+              <div class="text-center"><button type="submit" nam e="send">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
 

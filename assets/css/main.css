@@ -33,7 +33,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-default);
+  font-family: 'Montserrat', sans-serif;
   color: var(--color-default);
   background-color: #686A6C;
 }
@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -73,7 +73,7 @@ h6 {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
-  font-family: var(--font-primary);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .section-header h2::after {
@@ -187,7 +187,7 @@ h6 {
 #preloader:before,
 #preloader:after {
   content: "";
-  background-color: var(--color-secondary);
+  background-image:linear-gradient(#A70D2A ,#686A6C);;
   position: absolute;
   inset: 0;
   width: 50%;
@@ -406,7 +406,7 @@ h6 {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: var(--color-secondary);
+    background: #634a4e;
     transition: 0.3s;
     border-radius: 4px;
   }
