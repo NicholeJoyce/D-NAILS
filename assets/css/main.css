@@ -44,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: #FCC2EB;
+  color: #f78199;
   text-decoration: none;
 }
 
@@ -949,7 +949,7 @@ h6 {
 .services .service-item {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: var(--color-secondary);
+  background: #000000;
   height: 100%;
   overflow: hidden;
   z-index: 1;
@@ -965,8 +965,8 @@ h6 {
 }
 
 .services .service-item i {
-  background: var(--color-primary);
-  color: #ffffff;
+  background: #000000;
+  color: #000000;
   font-size: 24px;
   transition: 0.3s;
   display: flex;
@@ -985,7 +985,7 @@ h6 {
 }
 
 .services .service-item h4 a {
-  color: #ffffff;
+  color: #000000;
 }
 
 .services .service-item p {
@@ -995,7 +995,7 @@ h6 {
 }
 
 .services .service-item:hover:before {
-  background: var(--color-primary);
+  background: #000000;
   right: 0;
   top: 0;
   width: 100%;
@@ -1005,12 +1005,12 @@ h6 {
 
 .services .service-item:hover h4 a,
 .services .service-item:hover p {
-  color: #ffffff;
+  color: #000000;
 }
 
 .services .service-item:hover i {
-  background: #ffffff;
-  color: var(--color-primary);
+  background: #9a9a9a;
+  color: #747474;
 }
 
 /*--------------------------------------------------------------
