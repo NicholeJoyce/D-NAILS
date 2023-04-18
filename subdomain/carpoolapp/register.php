@@ -67,14 +67,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $mail = new PHPMailer(true);
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = 'true';
-    $mail->Username = 'nicholejoycesantos1122@gmail.com';
-    $mail->Password = 'ljkmfhktkcurffgk';
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = '465';
+    $mail->Username = 'contacts@dnails.shop';
+    $mail->Password = 'Nichole@15';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = '587';
 
-    $mail->setFrom('nicholejoycesantos1122@gmail.com', 'Carpool App');
+    $mail->setFrom('contacts@dnails.shop', 'Carpool App');
     $mail->addAddress($Email);
     $mail->isHTML(true);
     $mail->Subject = $subject;
