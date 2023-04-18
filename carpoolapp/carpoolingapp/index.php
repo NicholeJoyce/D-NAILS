@@ -90,9 +90,46 @@
   </div>
 
   <button type="submit" name="send" class="btn btn-primary">Submit</button>
+
+  
 </form>
 
     </div>
+    <div class="row mt-3">
+
+            <h1> Registered Users </h1>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Verification Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <?php
+                    if ($result->num_rows > 0) :
+                        $x = 1;
+                        while ($row = $result->fetch_assoc()) :
+                    ?>
+                            <tr>
+                                <th> <?= $x ?> </th>
+                                <td> <?= $row['FirstName'] . " " . $row['LastName'] ?> </td>
+                                <td> <?= $row['Email'] ?> </td>
+                                <td> <?= date("M d, Y H:i A", strtotime($row['TimeRegistered'])) ?> </td>
+                                <!-- date("M d, Y H:iA", strtotime($row['user_verified_at']) -->
+                            </tr>
+                    <?php
+                            $x++;
+                        endwhile;
+                    endif;
+                    ?>
+                </tbody>
+            </table>
+        </div>
     
     
 </body>
