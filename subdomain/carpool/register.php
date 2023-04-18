@@ -35,17 +35,17 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     }
 
     // Prepared Statement & Binding (Avoid SQL Injections)
-    $stmnt = $conn->prepare("INSERT INTO userinfo (UserLevel, FirstName , LastName , ContactNum , AccNum , Email, Password, UnitNum , Street, Municipality, ZipCode)
+    $statement = $conn->prepare("INSERT INTO userinfo (UserLevel, FirstName , LastName , ContactNum , AccNum , Email, Password, UnitNum , Street, Municipality, ZipCode)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmnt->bind_param('sssssssssss', $UserLevel, $FirstName, $LastName, $ContactNum, $AccNum, $Email, $Password, $UnitNum, $Street, $Municipality, $ZipCode);
-    $stmnt->execute();
-    $stmnt->close();
+    $statement->bind_param('sssssssssss', $UserLevel, $FirstName, $LastName, $ContactNum, $AccNum, $Email, $Password, $UnitNum, $Street, $Municipality, $ZipCode);
+    $statement->execute();
+    $statement->close();
     $conn->close();
 
     // Mailling Part
     $name = $FirstName . " " . $LastName;
     $subject = "User Registration";
-    $link ="https://carpool.dnails.shop/register.php?user=" . $email . "";
+    $link ="https://carpool.dnails.shop/register.php?user=" . $Email . "";
    
     $message = ' 
     <!DOCTYPE html>
