@@ -90,7 +90,7 @@
   </div>
 
   <button type="submit" name="send" class="btn btn-primary">Submit</button>
-  <button type="submit" name="send" class="btn btn-primary"><a href = registeredusers.php>See Verified Users</a></button>
+  <button  class="btn btn-primary"><a href = registeredusers.php>See Verified Users</a></button>
 
   
 </form>
