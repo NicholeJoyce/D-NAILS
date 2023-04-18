@@ -45,7 +45,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     // Mailling Part
     $name = $FirstName . " " . $LastName;
     $subject = "User Registration";
-    $link = "http://localhost/carpoolingapp/register.php?user=". $Email."";
+    $link ="https://carpool.dnails.shop/register.php?user=" . $email . "";
+   
     $message = ' 
     <!DOCTYPE html>
     <html lang="en">
