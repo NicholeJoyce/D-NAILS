@@ -63,7 +63,7 @@
 //     $mail->Body = "Thank you for your message " . $name . ", " .
 //      "<br> I appreciate you taking the time to reach out to me. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Once again, thank you for your message, and have a wonderful day. Regards, RWS Trucking Services";
 //     $mail->send();
-//     echo "Message Sent Successfully!";
+//     
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -94,7 +94,9 @@ if(isset($_POST["send"])){
     $mail->addAddress($sender); //Receivers Email
     $mail->isHTML(true);
     $mail->Subject = "Good Day!";
-    $mail->Body = "Thank you for contacting us! We will get back to you shortly. Have a wonderful day " . $name;
+    $mail->Body = "Thank you for your message " . $name . ", " .
+          " I appreciate you taking the time to reach out to me. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Once again, thank you for your message, and have a wonderful day. Regards, RWS Trucking Services";
     $mail->send();
+    echo "Message Sent Successfully!";
 }
 ?>
