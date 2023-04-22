@@ -75,12 +75,13 @@ require 'phpmailer/src/SMTP.php';
 
 
 if(isset($_POST["send"])){
+    echo "Message Sent Successfully!";
     //POST
     $sender = $_POST['email'];
     $name = $_POST['name'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
-    echo "Message Sent Successfully!";
+   
     //PHP Mailer Declaration
     $mail = new PHPMailer(true);
 
