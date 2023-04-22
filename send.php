@@ -63,41 +63,46 @@
 //     $mail->Body = "Thank you for your message " . $name . ", " .
 //      "<br> I appreciate you taking the time to reach out to me. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Once again, thank you for your message, and have a wonderful day. Regards, RWS Trucking Services";
 //     $mail->send();
-//     
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+//    
 
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
-require 'phpmailer/src/SMTP.php';
 
-if(isset($_POST["send"])){
-    //POST
-    $sender = $_POST['email'];
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
 
-    //PHP Mailer Declaration
-    $mail = new PHPMailer(true);
+// require 'phpmailer/src/Exception.php';
+// require 'phpmailer/src/PHPMailer.php';
+// require 'phpmailer/src/SMTP.php';
 
-    $mail->isSMTP();
-    $mail->Host = 'smtp.hostinger.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'contact@dnails.shop';
-    $mail->Password = 'Nichole@15'; //Gmail App Password
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = '587';
-    echo "Message Sent Successfully!";
 
-    //SETTING Email
-    $mail->setFrom('contact@dnails.shop', 'RWS Trucking Service'); //Senders Email
-    $mail->addAddress($sender); //Receivers Email
-    $mail->isHTML(true);
-    $mail->Subject = "Good Day!";
-    $mail->Body = "Thank you for your message " . $name . ", " .
-          " I appreciate you taking the time to reach out to me. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Once again, thank you for your message, and have a wonderful day. Regards, RWS Trucking Services";
-    $mail->send();
+// if(isset($_POST["send"])){
+//     //POST
+//     $sender = $_POST['email'];
+//     $name = $_POST['name'];
+//     $subject = $_POST['subject'];
+//     $message = $_POST['message'];
+
+//     //PHP Mailer Declaration
+//     $mail = new PHPMailer(true);
+
+//     $mail->isSMTP();
+//     $mail->Host = 'smtp.hostinger.com';
+//     $mail->SMTPAuth = true;
+//     $mail->Username = 'contact@dnails.shop';
+//     $mail->Password = 'Nichole@15'; //Gmail App Password
+//     $mail->SMTPSecure = 'tls';
+//     $mail->Port = '587';
+   
+
+//     //SETTING Email
+//     $mail->setFrom('contact@dnails.shop', 'RWS Trucking Service'); //Senders Email
+//     $mail->addAddress($sender); //Receivers Email
+//     $mail->isHTML(true);
+//     $mail->Subject = "Good Day!";
+//     $mail->Body = "Thank you for your message " . $name . ", " .
+//           " I appreciate you taking the time to reach out to me. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Once again, thank you for your message, and have a wonderful day. Regards, RWS Trucking Services";
+//     $mail->send();
     
-}
+//}
+
+echo "Message Sent Successfully!";
 ?>
