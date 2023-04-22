@@ -65,7 +65,7 @@
             </ul>
           </li>
           <li><a href="testimonials.html"><b>Testimonials</b></a></li>
-          <li><a href="contact.php" class="active"><b>Contact</b></a></li>
+        
         </ul>
       </nav><!-- .navbar -->
 
