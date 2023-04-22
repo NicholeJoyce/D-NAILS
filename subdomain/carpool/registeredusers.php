@@ -11,7 +11,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">ID</th>
+               
                 
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
@@ -26,7 +26,7 @@
             while($data = $verified_query_run->fetch_assoc()):
             ?>
                 <tr>
-                    <th scope="row"><?php echo $data['uID'] ?></th>
+                    
                     <td><?php echo $data['FirstName'] ?></td>
                     <td><?php echo $data['LastName'] ?></td>
                     <td><?php echo $data['TimeRegistered'] ?></td>
