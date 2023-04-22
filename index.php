@@ -271,7 +271,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    <div class="container">
+  <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>PhotoFolio</span></strong>. All Rights Reserved
       </div>
@@ -282,6 +282,8 @@
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
+   
+    
     </div>
   </footer><!-- End Footer -->
 
