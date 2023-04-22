@@ -78,6 +78,7 @@ h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Button "available for hire" */
 .section-header h2::after {
   content: "";
   width: 120px;
