@@ -73,7 +73,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="services.html"><b>Services</b></a></li>
+          <li><a href="testimonials.html"><b>Testimonials</b></a></li>
           <li><a href="contact.php"><b>Contact</b></a></li>
         </ul>
       </nav><!-- .navbar -->
