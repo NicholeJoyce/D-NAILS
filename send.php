@@ -43,7 +43,7 @@ if(isset($_POST["submit"])){
     $email = $_POST['email'];
     $name = $_POST['name'];
     $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    //$message = $_POST['message'];
 
     //PHP Mailer Declaration
     $mail = new PHPMailer(true);
@@ -60,7 +60,7 @@ if(isset($_POST["submit"])){
     $mail->setFrom('contact@dnails.shop', 'RWS Trucking Services'); //Senders Email
     $mail->addAddress($email); //Receivers Email
     $mail->isHTML(true);
-    $mail->Subject = $subject;
+    $mail->Subject = "RWS Trucking Services";
     $mail->Body = "<hr>" . "Good Day " ."<b>$name</b>" . "! " . "<br> I appreciate you taking the time to reach out to us. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Thank you for your message, and have a wonderful day. 
      <br><br>        
           Regards, <br>
