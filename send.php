@@ -77,7 +77,6 @@ if (isset($_POST['send'])) {
     $user = $_POST['email'];
     $name = $_POST['name'];
     $subject = $_POST['subject'];
-    // $message = $_POST['message'];
 
     $message = 'Thank you for reaching us out,' . $name . '!
         <br> "I appreciate you taking the time to reach out to me. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Once again, thank you for your message, and have a wonderful day.
