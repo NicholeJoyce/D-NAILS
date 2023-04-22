@@ -73,14 +73,14 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
 
-echo "Message Sent Successfully!";
+
 if(isset($_POST["send"])){
     //POST
     $sender = $_POST['email'];
     $name = $_POST['name'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
-
+    echo "Message Sent Successfully!";
     //PHP Mailer Declaration
     $mail = new PHPMailer(true);
 
