@@ -58,7 +58,7 @@
             <ul>
             <li><a href="haul.html" >Haul</a></li>
               <li><a href="lipatbahay.html">Lipat Bahay</a></li>
-              <li><a href="officetransfer.html" >Office Transfer</a></li>
+              <li><a href="officetransfer.html" class="active">Office Transfer</a></li>
               <li><a href="rawmat.html">Raw Materials Delivery</a></li>
               <li><a href="warehouse.html">Warehouse Transfer</a></li>
               <li><a href="contact.php">Inquiries</a></li>
@@ -150,7 +150,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <!-- <div class="my-3">
                 <div class="loading">Loading</div>
