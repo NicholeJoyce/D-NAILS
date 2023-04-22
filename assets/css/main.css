@@ -1131,7 +1131,7 @@ h6 {
   background: var(--color-secondary);
   text-align: center;
   padding: 15px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255);
 }
 
 .contact .php-email-form .loading:before {
@@ -1148,7 +1148,7 @@ h6 {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 4px;
+  border-radius: px;
   box-shadow: none;
   font-size: 14px;
   background-color: var(--color-secondary);
