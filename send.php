@@ -68,12 +68,12 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-echo "Message Sent Successfully!";
+
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
 
-
+echo "Message Sent Successfully!";
 if(isset($_POST["send"])){
     //POST
     $sender = $_POST['email'];
