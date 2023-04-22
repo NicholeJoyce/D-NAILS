@@ -101,7 +101,7 @@ if (isset($_POST['send'])) {
     $mail->Body = $message;
     $mail->send();
 
-    header('Location: index.html');
+    header('Location: index.php');
 
 }
 
