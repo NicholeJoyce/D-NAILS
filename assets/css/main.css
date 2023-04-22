@@ -992,7 +992,7 @@ h6 {
 }
 
 /* Font color of title*/
-.services  h4 a {
+.services .service-item h4 {
   color: #782929;
 }
 
@@ -1009,7 +1009,7 @@ h6 {
 }
 /* hover color pag nakastay yung cursor */
 .services .service-item:hover:before {
-  background: #702d2d;
+  background: #ffbebe;
   right: 0;
   top: 0;
   width: 100%;

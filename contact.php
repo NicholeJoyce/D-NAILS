@@ -56,11 +56,11 @@
           <li><a href="about.html"><b>About</b></a></li>
           <li class="dropdown"><a href="#"><span><b>Services</b></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-            <li><a href="haul.html">Haul</a></li>
+            <li><a href="haul.html" >Haul</a></li>
               <li><a href="lipatbahay.html">Lipat Bahay</a></li>
-              <li><a href="services.html">Office Transfer</a></li>
-              <li><a href="services.html">Raw Materials Delivery</a></li>
-              <li><a href="services.html">Warehouse Transfer</a></li>
+              <li><a href="officetransfer.html" class="active">Office Transfer</a></li>
+              <li><a href="rawmat.html">Raw Materials Delivery</a></li>
+              <li><a href="warehouse.html">Warehouse Transfer</a></li>
               <li><a href="contact.php">Inquiries</a></li>
             </ul>
           </li>

@@ -58,12 +58,12 @@
           <li><a href="about.html"><b>About</b></a></li>
           <li class="dropdown"><a href="#"><span><b>Services</b></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-            <li><a href="haul.html">Haul</a></li>
+            <li><a href="haul.html" >Haul</a></li>
               <li><a href="lipatbahay.html">Lipat Bahay</a></li>
-              <li><a href="services.html">Office Transfer</a></li>
-              <li><a href="services.html">Raw Materials Delivery</a></li>
-              <li><a href="services.html">Warehouse Transfer</a></li>
-              <li><a href="services.html">Inquiries</a></li>
+              <li><a href="officetransfer.html" class="active">Office Transfer</a></li>
+              <li><a href="rawmat.html">Raw Materials Delivery</a></li>
+              <li><a href="warehouse.html">Warehouse Transfer</a></li>
+              <li><a href="contact.php">Inquiries</a></li>
             </ul>
           </li>
           <li><a href="testimonials.html"><b>Testimonials</b></a></li>
@@ -72,10 +72,7 @@
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100084048667524" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+       
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
