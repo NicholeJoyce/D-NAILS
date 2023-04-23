@@ -40,7 +40,7 @@ require 'phpmailer/src/SMTP.php';
 
 if(isset($_POST["submit"])){
     //POST
-    $email = $_POST['email'];
+    $email = $_POST['mail'];
     $name = $_POST['name'];
     $subject = $_POST['subject'];
     //$message = $_POST['message'];
