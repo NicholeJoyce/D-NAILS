@@ -72,7 +72,7 @@ if (isset($_POST["send"])) {
     $check_email_query_run = mysqli_query($conn, $check_email_query);
 
     if(mysqli_num_rows($check_email_query_run) > 0){
-        $_SESSION['status'] = "Email already exists!";
+        $_SESSION['status'] = "The email has already been registered!";
         header("Location: index.php");
     }
     else{
@@ -84,7 +84,7 @@ if (isset($_POST["send"])) {
         if($query_run){
 
             sendemail_verify($FirstName , $Email, $verify_token);
-            $_SESSION['status'] ="Registration Successful! Please Verify in Email!";
+            $_SESSION['status'] ="Registered Successfully! You may now go to your Email for next Step!";
             header("Location: register.php");
         }else{
             $_SESSION['status'] = "Registration Failed!";
