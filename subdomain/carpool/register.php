@@ -31,8 +31,8 @@ function sendemail_verify($FirstName,$Email,$verify_token){
      $mail->SMTPAuth = true;
      $mail->Username = 'contacts@dnails.shop';
      $mail->Password = 'Nichole@15'; //Gmail App Password
-     $mail->SMTPSecure = 'ssl';
-     $mail->Port = '465';
+     $mail->SMTPSecure = 'tls';
+     $mail->Port = '587';
 
      $emailbody = " <h1><b>Good Day!  ". $FirstName . "</b></h1>
      <h3>Thank you for registering with our carpool service! We are delighted to have you on board. To start using our service, we kindly request you to verify your account by clicking on the verification link provided.</h3>
