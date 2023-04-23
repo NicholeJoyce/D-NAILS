@@ -22,7 +22,7 @@ require 'phpmailer/src/SMTP.php';
 include('connection.php');
 
 //FUNCTIONS
-function sendemail_verify($userFirstName,$userEmail,$verify_token){
+function sendemail_verify($FirstName,$Email,$verify_token){
      //PHP Mailer Declaration
      $mail = new PHPMailer(true);
 
@@ -33,10 +33,23 @@ function sendemail_verify($userFirstName,$userEmail,$verify_token){
      $mail->Password = 'Nichole@15'; //Gmail App Password
      $mail->SMTPSecure = 'ssl';
      $mail->Port = '465';
- 
-     
- 
-     
+
+     $emailbody = " <h1><b>Good Day!  ". $FirstName . "</b></h1>
+     <h3>Thank you for registering with our carpool service! We are delighted to have you on board. To start using our service, we kindly request you to verify your account by clicking on the verification link provided.</h3>
+     <hr>
+     <a href='http://localhost/carpool-project/verify-email.php?token=$verify_token'<button type='button' id='veributton' class='btn btn-info rounded-pill'>Verify Now!</button></a>
+     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4' crossorigin='anonymous'></script>
+     <hr>
+     <h4>Thank you and stay safeee!</h4>";
+
+     //SETTING Email
+    $mail->setFrom('contacts@dnails.shop', 'Carpool App Registration'); //Senders Email
+    $mail->addAddress($Email); //Receivers Email
+    $mail->isHTML(true);
+    $mail->Subject = "Carpool App Verification!";
+    $mail->Body = $emailbody;
+    $mail->send();
+   
    
 }
 if (isset($_POST["submit"])) {
@@ -53,21 +66,6 @@ if (isset($_POST["submit"])) {
          $Municipality = $_POST['municipality'];
          $ZipCode = $_POST['zipcode'];
     $verify_token = md5(rand());
-
-    //SETTING Email
-    $mail->setFrom('contacts@dnails.shop', 'Carpool App Registration'); //Senders Email
-    $mail->addAddress($Email); //Receivers Email
-    $mail->isHTML(true);
-    $mail->Subject = "Carpool App Verification!";
-    $mail->Body = $emailbody;
-    $mail->send();
-    $emailbody = " <h1><b>Good Day!  ". $FirstName . "</b></h1>
-     <h3>Thank you for registering with our carpool service! We are delighted to have you on board. To start using our service, we kindly request you to verify your account by clicking on the verification link provided.</h3>
-     <hr>
-     <a href='http://localhost/carpool-project/verify-email.php?token=$verify_token'<button type='button' id='veributton' class='btn btn-info rounded-pill'>Verify Now!</button></a>
-     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4' crossorigin='anonymous'></script>
-     <hr>
-     <h4>Thank you and stay safeee!</h4>";
 
 
     //EMAIL EXIST OR NOT
