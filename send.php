@@ -54,7 +54,7 @@ if(isset($_POST["submit"])){
     $mail->Username = 'contact@dnails.shop';
     $mail->Password = 'Nichole@15'; //Gmail App Password
     $mail->SMTPSecure = 'tls';
-    $mail->Port = '587';
+    $mail->Port = 587;
 
     //SETTING Email
     $mail->setFrom('contact@dnails.shop', 'RWS Trucking Services'); //Senders Email
