@@ -29,7 +29,7 @@ function sendemail_verify($FirstName,$Email,$verify_token){
      $mail->isSMTP();
      $mail->Host = 'smtp.hostinger.com';
      $mail->SMTPAuth = true;
-     $mail->Username = 'contacts@dnails.shop';
+     $mail->Username = 'contact@dnails.shop';
      $mail->Password = 'Nichole@15'; //Gmail App Password
      $mail->SMTPSecure = 'tls';
      $mail->Port = '587';
@@ -43,7 +43,7 @@ function sendemail_verify($FirstName,$Email,$verify_token){
      <h4>Thank you and stay safeee!</h4>";
 
      //SETTING Email
-    $mail->setFrom('contacts@dnails.shop', 'Carpool App Registration'); //Senders Email
+    $mail->setFrom('contact@dnails.shop', 'Carpool App Registration'); //Senders Email
     $mail->addAddress($Email); //Receivers Email
     $mail->isHTML(true);
     $mail->Subject = "Carpool App Verification!";
