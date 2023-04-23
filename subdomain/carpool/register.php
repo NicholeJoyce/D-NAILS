@@ -25,12 +25,11 @@ include('connection.php');
 function sendemail_verify($FirstName,$Email,$verify_token){
      //PHP Mailer Declaration
      $mail = new PHPMailer(true);
-
      $mail->isSMTP();
      $mail->Host = 'smtp.hostinger.com';
      $mail->SMTPAuth = true;
      $mail->Username = 'contact@dnails.shop';
-     $mail->Password = 'Nichole@15'; //Gmail App Password
+     $mail->Password = 'Nichole@15'; 
      $mail->SMTPSecure = 'tls';
      $mail->Port = '587';
 
@@ -52,7 +51,7 @@ function sendemail_verify($FirstName,$Email,$verify_token){
    
    
 }
-if (isset($_POST["submit"])) {
+if (isset($_POST["send"])) {
     //DECLARATION OF NAMES 
     $UserLevel = $_POST['userlevel'];
          $FirstName = $_POST['firstname'];
