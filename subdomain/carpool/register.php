@@ -34,11 +34,12 @@ function sendemail_verify($FirstName,$Email,$verify_token){
      $mail->Port = '587';
 
      $emailbody = " <h1><b>Good Day!  ". $FirstName . "</b></h1>
+     <hr>
      <h3>Thank you for registering with our carpool service! We are delighted to have you on board. To start using our service, we kindly request you to verify your account by clicking on the verification link provided.</h3>
-     <hr>
-     <a href='http://localhost/carpool-project/verify-email.php?token=$verify_token'<button type='button' id='veributton' class='btn btn-info rounded-pill'>Verify Now!</button></a>
+    
+     <a href='http://localhost/carpool-project/verify-email.php?token=$verify_token'<button type='button' id='veributton' class='btn btn-info rounded-pill'>Verify Your Email Here!</button></a>
      <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4' crossorigin='anonymous'></script>
-     <hr>
+   
      <h4>Thank you and stay safeee!</h4>";
 
      //SETTING Email
