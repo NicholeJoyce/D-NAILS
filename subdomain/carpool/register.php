@@ -1,114 +1,108 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <?php
+session_start();
 
-include 'connection.php';
-
+//PHP MAILER
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
+// INCLUDE
+include('connection.php');
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//FUNCTIONS
+function sendemail_verify($userFirstName,$userEmail,$verify_token){
+     //PHP Mailer Declaration
+     $mail = new PHPMailer(true);
 
-    $UserLevel = $_POST['userlevel'];
-    $FirstName = $_POST['firstname'];
-    $LastName= $_POST['lastname'];
-    $ContactNum= $_POST['contactnumber'];
-    $AccNum= $_POST['accountnumber'];
-    $Email = $_POST['mail'];
-    $Password = $_POST['pass'];
-    $UnitNum = $_POST['unitnum'];
-    $Street = $_POST['street'];
-    $Municipality = $_POST['municipality'];
-    $ZipCode = $_POST['zipcode'];
-
-    // Validate Email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $_SESSION['bg'] =  "danger";
-        $_SESSION['message'] = "Invalid email format!";
-        header('Location: index.php');
-        return;
-    }
-
-    // Checks the Email 
-    $sql = "SELECT * FROM userinfo WHERE Email='$Email'";
-    $result = $connection->query($sql);
-
-    if ($result->num_rows > 0) {
-        $_SESSION['bg'] =  "danger";
-        $_SESSION['message'] = "Email already exist!";
-        header('Location: index.php');
-        return;
-    }
-
-    // Prepared Statement & Binding (Avoid SQL Injections)
-    $statement = $conn->prepare("INSERT INTO userinfo (UserLevel, FirstName , LastName , ContactNum , AccNum , Email, Password, UnitNum , Street, Municipality, ZipCode)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $statement->bind_param('sssssssssss', $UserLevel, $FirstName, $LastName, $ContactNum, $AccNum, $Email, $Password, $UnitNum, $Street, $Municipality, $ZipCode);
-    $stmnt->execute();
-    $stmnt->close();
-    $connection->close();
-
-    // Mailling Part
-    $name = $FirstName . " " . $LastName;
-    $subject = "User Registration";
-    $link = $home . "/verify.php?user=" . $Email . "";
-    $message = ' 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            #verify {
-                background-color: #0f79b7;
-                padding: 10px;
-                text-decoration: none;
-                color: white;
-            }
-            #verify:hover {
-                background-color: #0988d2;
-            }
-        </style>
-    </head>
-    <body>
-        <b> Carpool App </b>
-        <hr>
-        <p> Hi, <strong>' . $name . '!</strong></p>
-        <p> You only have one more step to use the app. Please click the link below to finalize your Carpool App
-            Registration.
-            <br><br>
-            <a id="verify" href="' . $link . '"> Verify Email Address </a>
-            <br><br>
-            If you have are having trouble verifying, email us at carpool@jeyymsantos.com. Did not sign up for an account? You may kindly ignore this email.
-            <br><br>
-            <b>Carpool App </b>
-        </p>
-    </body>
-    </html>
-    ';
-
-    $mail = new PHPMailer(true);
-    $mail->isSMTP();
-    $mail->Host = 'smtp.hostinger.com';
-    $mail->SMTPAuth = 'true';
-    $mail->Username = 'contact@dnails.shop';
-    $mail->Password = 'Nichole@15';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = '587';
-
-    $mail->setFrom('contact@dnails.shop', 'Carpool App');
-    $mail->addAddress($email);
-    $mail->isHTML(true);
-    $mail->Subject = $subject;
-    $mail->Body = $message;
-    $mail->send();
-
-    $_SESSION['bg'] =  "warning";
-    $_SESSION['message'] = "Please check your email to verify your registration.";
-    header('Location: index.php');
+     $mail->isSMTP();
+     $mail->Host = 'smtp.hostinger.com';
+     $mail->SMTPAuth = true;
+     $mail->Username = 'contacts@dnails.shop';
+     $mail->Password = 'Nichole@15'; //Gmail App Password
+     $mail->SMTPSecure = 'ssl';
+     $mail->Port = '465';
+ 
+     
+ 
+     
+   
 }
+if (isset($_POST["submit"])) {
+    //DECLARATION OF NAMES 
+    $UserLevel = $_POST['userlevel'];
+         $FirstName = $_POST['firstname'];
+        $LastName= $_POST['lastname'];
+        $ContactNum= $_POST['contactnumber'];
+       $AccNum= $_POST['accountnumber'];
+       $Email = $_POST['mail'];
+       $Password = $_POST['pass'];
+         $UnitNum = $_POST['unitnum'];
+         $Street = $_POST['street'];
+         $Municipality = $_POST['municipality'];
+         $ZipCode = $_POST['zipcode'];
+    $verify_token = md5(rand());
+
+    //SETTING Email
+    $mail->setFrom('contacts@dnails.shop', 'Carpool App Registration'); //Senders Email
+    $mail->addAddress($Email); //Receivers Email
+    $mail->isHTML(true);
+    $mail->Subject = "Carpool App Verification!";
+    $mail->Body = $emailbody;
+    $mail->send();
+    $emailbody = " <h1><b>Good Day!  ". $FirstName . "</b></h1>
+     <h3>Thank you for registering with our carpool service! We are delighted to have you on board. To start using our service, we kindly request you to verify your account by clicking on the verification link provided.</h3>
+     <hr>
+     <a href='http://localhost/carpool-project/verify-email.php?token=$verify_token'<button type='button' id='veributton' class='btn btn-info rounded-pill'>Verify Now!</button></a>
+     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4' crossorigin='anonymous'></script>
+     <hr>
+     <h4>Thank you and stay safeee!</h4>";
+
+
+    //EMAIL EXIST OR NOT
+    $check_email_query = "SELECT Email FROM userinfo WHERE Email = '$Email' LIMIT 1";
+    $check_email_query_run = mysqli_query($conn, $check_email_query);
+
+    if(mysqli_num_rows($check_email_query_run) > 0){
+        $_SESSION['status'] = "Email already exists!";
+        header("Location: index.php");
+    }
+    else{
+        $sql = "INSERT INTO userinfo (UserLevel, FirstName , LastName , ContactNum , AccNum , Email, Password, UnitNum , Street, Municipality, ZipCode, verify_token) 
+         VALUES ('$UserLevel', '$FirstName', '$LastName', '$ContactNum', '$AccNum', '$Email', '$Password', '$UnitNum' , '$Street', '$Municipality', '$ZipCode', '$verify_token')";
+    
+        $query_run = mysqli_query($conn, $sql);
+
+        if($query_run){
+
+            sendemail_verify($FirstName , $Email, $verify_token);
+            $_SESSION['status'] ="Registration Successful! Please Verify in Email!";
+            header("Location: register.php");
+        }else{
+            $_SESSION['status'] = "Registration Failed!";
+            header("Location: index.php");
+        }
+    
+    }
+
+    header('Location: index.php');
+
+   
+}
+?>
+</body>
+</html>
 
 // include 'connection.php';
 // use PHPMailer\PHPMailer\PHPMailer;
@@ -283,4 +277,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    
 // }
-?>
