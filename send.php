@@ -54,7 +54,7 @@ if(isset($_POST["submit"])){
     $mail->Username = 'truckingservicesrws@gmail.com';
     $mail->Password = 'zgfdvkzbsvaxrkdn'; //Gmail App Password
     $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
+    $mail->Port = '465';
 
     //SETTING Email
     $mail->setFrom('truckingservicesrws@gmail.com', 'RWS Trucking Services'); //Senders Email
