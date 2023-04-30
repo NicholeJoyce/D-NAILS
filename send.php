@@ -31,42 +31,42 @@
 //     echo "Feedback Successful!";}
 
 // ---------------------------------------------- 2nd try
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
 
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
-require 'phpmailer/src/SMTP.php';
+// require 'phpmailer/src/Exception.php';
+// require 'phpmailer/src/PHPMailer.php';
+// require 'phpmailer/src/SMTP.php';
 
-if(isset($_POST["submit"])){
-    //POST
-    $email = $_POST['mail'];
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    //$message = $_POST['message'];
+// if(isset($_POST["submit"])){
+//     //POST
+//     $email = $_POST['mail'];
+//     $name = $_POST['name'];
+//     $subject = $_POST['subject'];
+//     //$message = $_POST['message'];
 
-    //PHP Mailer Declaration
-    $mail = new PHPMailer(true);
+//     //PHP Mailer Declaration
+//     $mail = new PHPMailer(true);
 
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'truckingservicesrws@gmail.com';
-    $mail->Password = 'zgfdvkzbsvaxrkdn'; //Gmail App Password
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = '465';
+//     $mail->isSMTP();
+//     $mail->Host = 'smtp.gmail.com';
+//     $mail->SMTPAuth = true;
+//     $mail->Username = 'truckingservicesrws@gmail.com';
+//     $mail->Password = 'zgfdvkzbsvaxrkdn'; //Gmail App Password
+//     $mail->SMTPSecure = 'ssl';
+//     $mail->Port = '465';
 
-    //SETTING Email
-    $mail->setFrom('truckingservicesrws@gmail.com', 'RWS Trucking Services'); //Senders Email
-    $mail->addAddress($email); //Receivers Email
-    $mail->isHTML(true);
-    $mail->Subject = "RWS Trucking Services";
-    $mail->Body = "<hr>" . "Good Day " ."<b>$name</b>" . "! " . "<br> I appreciate you taking the time to reach out to us. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Thank you for your message, and have a wonderful day. 
-     <br><br>        
-          Regards, <br>
-         <b>RWS Trucking Service </b>";
-    $mail->send();
-    header('Location: index.php');
+//     //SETTING Email
+//     $mail->setFrom('truckingservicesrws@gmail.com', 'RWS Trucking Services'); //Senders Email
+//     $mail->addAddress($email); //Receivers Email
+//     $mail->isHTML(true);
+//     $mail->Subject = "RWS Trucking Services";
+//     $mail->Body = "<hr>" . "Good Day " ."<b>$name</b>" . "! " . "<br> I appreciate you taking the time to reach out to us. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Thank you for your message, and have a wonderful day. 
+//      <br><br>        
+//           Regards, <br>
+//          <b>RWS Trucking Service </b>";
+//     $mail->send();
+//     header('Location: index.php');
 
 //---------------------------------------------------3rd try
 // use PHPMailer\PHPMailer\PHPMailer;
@@ -104,6 +104,46 @@ if(isset($_POST["submit"])){
 //     $mail->send();
 
 //     header('Location: index.php');
+
+//-------------------------------- 4th try
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
+
+if(isset($_POST["submit"])){
+    //POST
+    $sender = $_POST['email'];
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    //PHP Mailer Declaration
+    $mail = new PHPMailer(true);
+
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'truckingservicesrws@gmail.com';
+    $mail->Password = 'zgfdvkzbsvaxrkdn'; //Email Password
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = '465';
+
+    //SETTING Email
+    $mail->setFrom('truckingservicesrws@gmail.com', 'RWS Trucking Services'); //Senders Email
+    $mail->addAddress($sender); //Receivers Email
+    $mail->isHTML(true);
+    $mail->Subject = "RWS Trucking Services";
+    $mail->Body = "<hr>" . "Good Day " ."<b>$name</b>" . "! " . "<br> I appreciate you taking the time to reach out to us. Please know that I have received your message, and I will do my best to respond as soon as possible. Your patience and understanding are greatly appreciated, and I look forward to getting back to you soon. Thank you for your message, and have a wonderful day. 
+     <br><br>        
+          Regards, <br>
+         <b>RWS Trucking Service </b>";
+    $mail->send();
+
+    header('Location: index.php');
 
 }
 
