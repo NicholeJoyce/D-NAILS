@@ -57,7 +57,7 @@ if(isset($_POST["submit"])){
     $mail->Port = 465;
 
     //SETTING Email
-    $mail->setFrom('contact@dnails.shop', 'RWS Trucking Services'); //Senders Email
+    $mail->setFrom('truckingservicesrws@gmail.com', 'RWS Trucking Services'); //Senders Email
     $mail->addAddress($email); //Receivers Email
     $mail->isHTML(true);
     $mail->Subject = "RWS Trucking Services";
