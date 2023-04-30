@@ -52,7 +52,7 @@ if(isset($_POST["submit"])){
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'truckingservicesrws@gmail.com';
-    $mail->Password = 'rwstrucking2010'; //Gmail App Password
+    $mail->Password = 'zgfdvkzbsvaxrkdn'; //Gmail App Password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
