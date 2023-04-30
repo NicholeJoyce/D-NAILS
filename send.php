@@ -49,12 +49,12 @@ if(isset($_POST["submit"])){
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();
-    $mail->Host = 'smtp.hostinger.com';
+    $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'contact@dnails.shop';
-    $mail->Password = 'Nichole@15'; //Gmail App Password
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->Username = 'truckingservicesrws@gmail.com';
+    $mail->Password = 'rwstrucking2010'; //Gmail App Password
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
 
     //SETTING Email
     $mail->setFrom('contact@dnails.shop', 'RWS Trucking Services'); //Senders Email
