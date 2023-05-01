@@ -1,16 +1,12 @@
 <?php
 include 'connection.php';
-session_start();
-if (isset($_SESSION['status'])) {
-  echo "<h4>" . $_SESSION['status'] . "</h4>";
-  unset($_SESSION['status']);
-}
 
-if(isset($_POST['login'])) {
+
+if(isset($_REQUEST['login'])) {
     $email = $_POST['mail'];
     $password = $_POST['pass'];
     $verify = 1;
-    $rec = "SELECT * FROM userinfo WHERE 'Email' = '$email' AND 'Password' = '$password' AND 'verify_status' = '1'";
+    $rec = "SELECT * FROM userinfo WHERE 'Email' = '$email' AND 'Password' = '$password' AND 'verify_status' = 1";
     $result = mysqli_query($conn, $rec);
 
     if (is_array($row)) {
