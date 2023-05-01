@@ -137,7 +137,7 @@ font-family: 'Bruno Ace SC';
 
         </div>
         <div class="buttonsubmit">
-          <center><button type="submit" name="send" class="btn btn-primary" style="background-color:#161B30">Submit</button></center>
+          <center><button type="submit" name="login" class="btn btn-primary" style="background-color:#161B30">Submit</button></center>
         </div>
 
       
