@@ -1,21 +1,23 @@
 <?php
 include 'connection.php';
 
-
 if(isset($_REQUEST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $verify = 1;
-    $rec = "SELECT * FROM userinfo WHERE 'Email' = '$email' AND 'Password' = '$password' AND 'verify_status' = 1";
+    $rec = "SELECT * FROM userinfo WHERE Email = '$email' AND Password = '$password' AND verify_status = 1";
     $result = mysqli_query($conn, $rec);
-
+    
+    $row=mysqli_fetch_assoc($result);
+   
     if (is_array($row)) {
-
+        echo "Hello";
         $_SESSION['FirstName'] = $row['firstname'];
         $_SESSION['LastName'] = $row['lastname'];
     }
 
     if (!empty($row)){
+        
         if($row['UserLevel'] == 1) {
             header("location: pasreg.php");
         }else if($row['UserLevel'] == 2) {
@@ -25,8 +27,8 @@ if(isset($_REQUEST['login'])) {
         }
     }else {
         $SESSION['status'] = "Invalid!";
-        header("location: index.php");
-        exit(0);
+        // header("location: index.php");
+        // exit(0);
     }
 }
 ?>

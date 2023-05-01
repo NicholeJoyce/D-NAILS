@@ -41,7 +41,7 @@ include ('connection.php');
   
   <center>
     <button type="submit" class="btn btn-primary" style="background-color:#161B30">Submit</button>
-    <button type="submit" class="btn btn-primary" style="background-color:#161B30"><a href="registeredusers.php" style="color:black">See Registered Vehicles</a></button>
+    <button type="submit" class="btn btn-primary" style="background-color:#161B30"><a href="registeredusers.php" style="color:white">See Registered Vehicles</a></button>
 
 </center>
 
