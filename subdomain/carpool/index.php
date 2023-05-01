@@ -88,7 +88,7 @@ include('connection.php');
   </div>
 
   <div class="reg">
-    <p>If you don't have an account yet: <a href=userreg.php>Create an Account Here</a></p>
+    <p>If you don't have an account yet: <a href=userreg.php style="color:black">Create an Account Here</a></p>
   </div>
   <div class ="centerbutton">
   <center><button type="submit" name="submit" class="btn btn-primary" style="background-color:#161B30">Submit</button></center>

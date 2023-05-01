@@ -15,23 +15,37 @@
     .form-label {
 
       font-family: 'Bruno Ace SC';
-     
+      color:black;
+
 
     }
+    .form-text {
 
-    .button{
+font-family: 'Bruno Ace SC';
+
+
+}
+
+    .buttonsubmit {
       display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  height: 300px;
-    margin-top: 15px;
-    font-family: 'Bruno Ace SC';
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+      height: 300px;
+      margin-top: 15px;
+      font-family: 'Bruno Ace SC';
     }
 
-    .h1{
+    .h1 {
+
       font-family: 'Bruno Ace SC';
       font-weight: bold;
+    }
+
+    .login {
+      font-family: 'Bruno Ace SC';
+      align-items: center;
+      margin-top: 20px
     }
   </style>
 </head>
@@ -50,7 +64,7 @@
       ?>
 
       <form action=register.php method=post>
-        <h1 style="font-family: 'Bruno Ace SC'">Register Your Account</h1>
+        <h1 style="font-family: 'Bruno Ace SC'">Registion For Your Account</h1>
         <!-- UserLevel -->
         <div class="mb-3">
           <label for="userlevel" class="form-label">User Type</label>
@@ -85,7 +99,7 @@
         <div class="mb-3">
           <label for="mail" class="form-label">Email address</label>
           <input type="email" name="mail" class="form-control" id="mail" aria-describedby="emailHelp" required>
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <div id="emailHelp" class="form-text" style="color:black">We'll never share your email with anyone else.</div>
         </div>
         <!-- password -->
         <div class="mb-3">
@@ -115,10 +129,18 @@
           <label for="zipcode" class="form-label">Zip Code</label>
           <input type="zipcode" name="zipcode" class="form-control" id="zipcode" required>
 
+          <div class="login">
+            <center>
+              <p>Already have an Account? <a href=index.php style="color:black">Log In Here</a></p>
+            </center>
+          </div>
+
         </div>
-        <div class="button">
+        <div class="buttonsubmit">
           <center><button type="submit" name="send" class="btn btn-primary" style="background-color:#161B30">Submit</button></center>
         </div>
+
+      
       </form>
 
   </div>
