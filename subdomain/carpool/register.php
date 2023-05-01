@@ -46,7 +46,7 @@ function sendemail_verify($FirstName,$Email,$verify_token){
     $mail->setFrom('contact@dnails.shop', 'Carpool App Registration'); //Senders Email
     $mail->addAddress($Email); //Receivers Email
     $mail->isHTML(true);
-    $mail->Subject = "Carpool App Verification!";
+    $mail->Subject = "Carpool App Verification!" . $FirstName;
     $mail->Body = $emailbody;
     $mail->send();
    
