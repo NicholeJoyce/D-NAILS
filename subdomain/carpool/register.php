@@ -74,7 +74,7 @@ if (isset($_POST["send"])) {
 
     if(mysqli_num_rows($check_email_query_run) > 0){
         $_SESSION['status'] = "The email has already been registered!";
-        header("Location: index.php");
+        header("Location: userreg.php");
     }
     else{
         $sql = "INSERT INTO userinfo (UserLevel, FirstName , LastName , ContactNum , AccNum , Email, Password, UnitNum , Street, Municipality, ZipCode, verify_token) 
@@ -86,14 +86,12 @@ if (isset($_POST["send"])) {
 
             sendemail_verify($FirstName , $Email, $verify_token);
             $_SESSION['status'] ="Registered Successfully! You may now go to your Email for next Step!";
-            header("Location: register.php");
+            header("Location: index.php");
         }else{
             $_SESSION['status'] = "Registration Failed!";
-            header("Location: index.php");
+            header("Location: userreg.php");
         }
-    
     }
-
     header('Location: index.php');
 
    

@@ -1,3 +1,15 @@
+<?php
+include ('connection.php');
+session_start();
+
+      if (isset($_SESSION['status'])) {
+        echo "<h4>" . $_SESSION['status'] . "</h4>";
+        unset($_SESSION['status']);
+      }
+    
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

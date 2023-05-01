@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,7 +65,7 @@ font-family: 'Bruno Ace SC';
       }
       ?>
 
-      <form action=register.php method=post>
+      <form action="register.php" method="post">
         <h1 style="font-family: 'Bruno Ace SC'">Registion For Your Account</h1>
         <!-- UserLevel -->
         <div class="mb-3">
