@@ -1,8 +1,5 @@
 <?php
 include ('connection.php');
-session_start();
-
-
 
 ?>
 
@@ -42,7 +39,12 @@ session_start();
     <input type="text" class="form-control" name="validid" id="validid">
   </div>
   
-  <center><button type="submit" class="btn btn-primary" style="background-color:#161B30">Submit</button></center>
+  <center>
+    <button type="submit" class="btn btn-primary" style="background-color:#161B30">Submit</button>
+    <button type="submit" class="btn btn-primary" style="background-color:#161B30"><a href="registeredusers.php" style="color:black">See Registered Vehicles</a></button>
+
+</center>
+
 </form>
 </div>
 </body>

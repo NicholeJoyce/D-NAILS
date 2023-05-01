@@ -1,11 +1,10 @@
 <?php
 include 'connection.php';
-session_start();
 
 
 if(isset($_REQUEST['login'])) {
-    $email = $_POST['mail'];
-    $password = $_POST['pass'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
     $verify = 1;
     $rec = "SELECT * FROM userinfo WHERE 'Email' = '$email' AND 'Password' = '$password' AND 'verify_status' = 1";
     $result = mysqli_query($conn, $rec);
@@ -30,3 +29,4 @@ if(isset($_REQUEST['login'])) {
         exit(0);
     }
 }
+?>
