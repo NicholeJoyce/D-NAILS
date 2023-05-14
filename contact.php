@@ -122,7 +122,7 @@
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-3">
+          <!-- <div class="col-lg-3">
             <div class="info-item d-flex">
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
@@ -130,7 +130,7 @@
                 <p>+1 5589 55488 55</p>
               </div>
             </div>
-          </div><!-- End Info Item -->
+          </div>End Info Item -->
 
         </div>
 
@@ -157,7 +157,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center"><button type="submit" name="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" name="submit" style="background-color: #ccc">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
 
